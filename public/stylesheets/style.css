@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#cardUsuario {
+  width: 600px;
+  padding: 30px;  
+}
+
+#cardListarUsuario{
+  width: 1600px;
+  padding: 20px;
+}
+
+h4{
+  font-weight: 600;
+}
+
+h5{
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+#butoesCadastrar{
+  display: space-arround;
+}

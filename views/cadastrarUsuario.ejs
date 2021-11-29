@@ -1,0 +1,33 @@
+<%- include("./partials/header") %>
+   <div class="container">
+    <div class="card center" id="cardUsuario">
+        <div class="row">
+            <h4 class="center red-text text-darken-4">Cadastro de Usuario</h4>
+            <form class="col s12" method="post" action="<%= formAction %>">
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input value="<%= usuario.nome %>" id="nome" type="text" class="validate" name="nome">
+                    <label for="nome">Nome</label>
+                    </div>
+                </div>            
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input value="<%= usuario.email %>" id="email" type="email" class="validate" name="email">
+                    <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input value="<%= usuario.senha %>" id="senha" type="password" class="validate" name="senha">
+                    <label for="senha">Senha</label>
+                    </div>
+                </div>
+                <div class="row" id="butoesCadastrar">
+                    <a href="/login/listarUsuario" class="grey btn">Voltar</a>
+                    <button class="blue  btn">Salvar</button>                
+                </div>
+            </form>
+        </div>
+    </div>
+   </div>
+<%- include("./partials/footer") %>
